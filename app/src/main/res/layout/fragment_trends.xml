@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"></include>
+    <com.example.z_h_q.mycollege.view.PullToRefreshListView
+        android:id="@+id/lv_trends"
+        android:layout_below="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.z_h_q.mycollege.view.PullToRefreshListView>
+    <ImageView
+        android:id="@+id/iv_send"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/add_gene_normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <!--<LinearLayout
+        android:id="@+id/ll_trends"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/et_comment_content"
+            android:hint="输入你想评论的内容"
+            android:textSize="14sp"
+
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="#979797"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>-->
+</RelativeLayout>

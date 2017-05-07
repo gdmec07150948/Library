@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/iv_commend_icon"
+        android:layout_width="95dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/book"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/tv_commend_name"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="孩子，把你的手给我"
+        android:textSize="16dp"
+        android:textColor="#505756"
+        android:layout_below="@id/iv_commend_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+    <TextView
+        android:id="@+id/tv_commend_author"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_commend_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#97A0A2"
+        android:text="海姆·G·吉诺特"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="14dp" />
+</RelativeLayout>

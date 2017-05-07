@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <include layout="@layout/title_bar"></include>
+
+    <com.example.z_h_q.mycollege.view.GridViewWithHeaderAndFooter
+        android:id="@+id/gv_book_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eff3f4"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"></com.example.z_h_q.mycollege.view.GridViewWithHeaderAndFooter>
+</LinearLayout>

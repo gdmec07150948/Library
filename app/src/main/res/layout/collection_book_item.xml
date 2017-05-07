@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="120dp"
+            android:id="@+id/iv_book_pic"
+            android:scaleType="fitXY"
+            android:src="@drawable/book" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="孩子，把你的手给我"
+                android:textSize="18dp"
+                android:textColor="#505756"
+                android:singleLine="true"
+                android:id="@+id/tv_book_name"
+                android:layout_marginTop="1dp"/>
+            <TextView
+                android:id="@+id/tv_book_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_book_name"
+                android:layout_marginTop="10dp"
+                android:textColor="#97A0A2"
+                android:text="海姆·G·吉诺特"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

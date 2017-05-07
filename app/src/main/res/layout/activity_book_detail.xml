@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <include layout="@layout/title_bar"
+        android:id="@+id/head"
+        android:layout_alignParentTop="true"></include>
+    <ListView
+        android:id="@+id/lv_book_detail_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:dividerHeight="1dp"
+        android:paddingBottom="50dp">
+    </ListView>
+    <TextView
+        android:id="@+id/no_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_book_detail_comment"
+        android:visibility="invisible"
+        android:text="暂无评论"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"/>
+    <!--<LinearLayout
+        android:id="@+id/no_item"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/lv_book_detail_comment">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/eye_1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无评论"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+    </LinearLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/list_divider_color"
+        android:layout_above="@+id/foot"
+        />
+    <include layout="@layout/buttom_bar"
+        android:id="@+id/foot"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"></include>
+</RelativeLayout>

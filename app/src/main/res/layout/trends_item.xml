@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3">
+    <RelativeLayout
+        android:id="@+id/rl_trends_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/iv_trends_item_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/comment_user_img"/>
+        <TextView
+            android:id="@+id/tv_trends_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="16dp"
+            android:textColor="#343D45"
+            android:gravity="center_vertical"
+            android:text="低调、平凡"
+            android:layout_toRightOf="@+id/iv_trends_item_icon"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_trends_item_content"
+            android:text="哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈哈哈哈哈哈"
+            android:textSize="18dp"
+            android:textColor="#343E47"
+            android:layout_below="@+id/iv_trends_item_icon"
+            android:layout_alignLeft="@+id/tv_trends_item_data"
+            android:layout_alignStart="@+id/tv_trends_item_data" />
+        <TextView
+            android:id="@+id/tv_trends_item_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9098A0"
+            android:textSize="16dp"
+            android:text="03-27 22:10"
+            android:layout_alignLeft="@+id/tv_trends_item_name"
+            android:layout_below="@+id/tv_trends_item_content"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_recover"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/text_bottom_skip_select"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_trends_item_content"/>
+        <ListView
+            android:id="@+id/lv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F4F6"
+            android:layout_alignLeft="@+id/tv_trends_item_data"
+            android:layout_below="@+id/tv_trends_item_data"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@+id/iv_recover"
+            >
+
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
